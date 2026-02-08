@@ -20,6 +20,7 @@
         class="text-white text-sm tracking-widest uppercase hover:text-gray-400 transition-colors flex items-center gap-2"
         aria-label="Close menu"
       >
+      
         Close
         <svg
           class="w-6 h-6"
@@ -42,19 +43,19 @@
     <div
       :class="[
         'fixed top-0 right-0 bg-black/95 backdrop-blur-sm transition-all duration-700 ease-in-out z-30',
-        isOpen ? 'w-screen h-screen opacity-100 pointer-events-auto' : 'w-0 h-0 opacity-0 pointer-events-none'
+        isOpen ? 'w-screen h-screen opacity-100 pointer-events-auto' : 'w-0 h-0 opacity-0 pointer-events-none font-mono'
       ]"
       style="transform-origin: top right"
     >
       <!-- Menu Items - Left Aligned -->
-      <div class="w-full h-full flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 2xl:px-44 gap-4">
+      <div class="w-full h-full flex flex-col items-start font-mono  justify-start pt-16 sm:pt-20 md:pt-24 lg:pt-32 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 2xl:px-44 gap-4 sm:gap-5 md:gap-4 tracking-widest">
         <router-link
           v-for="(item, index) in menuItems"
           :key="item.name"
           :to="item.to"
           @click="toggleMenu"
           :class="[
-            'text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide transition-all duration-500 hover:text-gray-400',
+            'text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl font-mono font-bold tracking-widest transition-all duration-500 hover:text-gray-400 py-2 sm:py-3 md:py-4',
             isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
           ]"
           :style="{ transitionDelay: isOpen ? `${index * 100 + 200}ms` : '0ms' }"
@@ -66,20 +67,18 @@
       <!-- Bottom Quick Links -->
       <div
         :class="[
-          'absolute bottom-8 left-6 sm:left-10 md:left-16 lg:left-24 xl:left-32 2xl:left-44 flex items-center gap-4 text-white text-xs tracking-widest transition-all duration-500',
+          'absolute bottom-8 sm:bottom-12 md:bottom-16 left-6 sm:left-10 md:left-16 lg:left-24 xl:left-32 2xl:left-44 right-6 sm:right-10 md:right-16 lg:right-24 xl:right-32 2xl:right-44 flex flex-wrap items-center gap-2 sm:gap-4 md:gap-6 text-white text-xs sm:text-sm md:text-base tracking-widest transition-all duration-500',
           isOpen ? 'opacity-60 translate-y-0' : 'opacity-0 translate-y-4'
         ]"
         :style="{ transitionDelay: isOpen ? '600ms' : '0ms' }"
       >
-        <span>Quick Links</span>
-        <span>›</span>
-        <a href="#" class="hover:text-gray-400 transition-colors">A to Z index</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Find a person</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Events</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Media Relations</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Alumni</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Give Now</a>
-        <a href="#" class="hover:text-gray-400 transition-colors">Emergency</a>
+        <span class="text-sm sm:text-base md:text-lg">Quick Links</span>
+        <span class="text-lg sm:text-xl">›</span>
+        <a href="#" class="hover:text-gray-400 transition-colors text-sm sm:text-base">Web Development</a>
+        <a href="#" class="hover:text-gray-400 transition-colors text-sm sm:text-base">Programming</a>
+        <a href="#" class="hover:text-gray-400 transition-colors text-sm sm:text-base">Quizzes</a>
+        <a href="#" class="hover:text-gray-400 transition-colors text-sm sm:text-base">Activities</a>
+        <a href="#" class="hover:text-gray-400 transition-colors text-sm sm:text-base">Exams</a>
       </div>
     </div>
 
@@ -118,11 +117,10 @@ const toggleMenu = () => {
 };
 
 const menuItems = [
-  { name: 'Academics', to: '/academics' },
-  { name: 'Campus', to: '/campus' },
-  { name: 'In Focus', to: '/focus' },
-  { name: 'Visit', to: '/visit' },
+  { name: 'Home', to: '/' },
   { name: 'About', to: '/about' },
-  { name: 'News', to: '/news' }
+  { name: 'Guides', to: '/guides' },
+  { name: 'Courses', to: '/courses' },
+  { name: 'Resources', to: '/resources' }
 ];
 </script>

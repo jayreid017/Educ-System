@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-800 min-h-screen">
+  <div class="bg-black min-h-screen">
     <Navbar />
-    <div class="bg-gray-800">
+    <div class="bg-black">
       <div :class="containerClass">
         <router-view />
       </div>

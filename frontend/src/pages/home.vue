@@ -15,6 +15,11 @@
           <h5 class="text-white font-mono tracking-widest text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             WELCOME TO
           </h5>
+
+          <!-- Platform Context -->
+          <h5 class="text-gray-300 font-mono tracking-widest text-xs sm:text-sm md:text-base">
+            A MULTI-PURPOSE LEARNING PLATFORM
+          </h5>
           
           <!-- Main Title -->
           <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white font-mono tracking-wide leading-tight">
@@ -24,34 +29,33 @@
           <!-- Description -->
           <div class="flex flex-col gap-4 border-l-2 border-sky-200 my-2 sm:my-3 md:my-4">
             <p class="text-sm sm:text-base lg:text-lg text-gray-300 md:text-gray-400 font-mono tracking-wide pl-4 sm:pl-5 md:pl-6 leading-relaxed max-w-prose">
-              A beginner-friendly guide for creating Vue projects. Follow clear, step-by-step instructions to build and run your app with ease.
+              A beginner-friendly platform for web development, programming, and academic resources.
             </p>
           </div>
           
           <!-- CTA Button -->
           <div class="flex justify-start items-start mt-4 sm:mt-6 md:mt-8 lg:mt-10">
             <button class="text-white text-sm sm:text-base md:text-lg lg:text-xl font-mono tracking-widest uppercase border border-sky-100/50 px-4 py-3 sm:px-5 sm:py-3.5 md:px-6 md:py-4 hover:shadow-lg hover:shadow-sky-200/30 cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 active:scale-95 whitespace-nowrap">
-              Get Started ->
+              Get Started →
             </button>
           </div>
           
         </div>
-     
       </section>
-   
     </div>
+
     <section class="relative w-full px-4 sm:px-6 md:px-8 lg:px-0 pb-10 lg:pb-0">
       <div class="mx-auto max-w-7xl lg:absolute lg:bottom-[-100px] lg:right-8">
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+          
           <!-- Education Card -->
           <div class="bg-clip-padding backdrop-filter backdrop-blur-lg bg-white/5 border border-gray-100/20 px-5 py-5 sm:px-8 sm:py-7">
             <div class="p-6 sm:p-8 md:p-12">
               <h1 class="text-white text-sm sm:text-base md:text-lg font-mono tracking-widest uppercase mb-2">
                 EDUCATION
               </h1>
-
               <p class="text-gray-300 text-xs sm:text-sm md:text-base font-mono max-w-xs">
-                Learn through comprehensive guides and tutorials
+                Web development guides, programming fundamentals, and academic resources
               </p>
             </div>
           </div>
@@ -63,10 +67,11 @@
                 INNOVATION
               </h1>
               <p class="text-gray-300 text-xs sm:text-sm md:text-base font-mono max-w-xs">
-                Build modern applications with cutting-edge tools
+                Interactive tools for lessons, activities, quizzes, and exams
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
