@@ -1,5 +1,67 @@
 @import "tailwindcss";
 
 @theme{
-   --color-jb-red: #751636;
+   --color-jb-red: #A52446;
+   --color-jb-dirtywhite: #F2EFE9;
+   --font-aeonik: "AeonikFono",sans-serif;
+   --font-karantina: "Karantina",sans-serif;
 }
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Air.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Thin.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AeonikFono";
+  src: url("./assets/fonts/AeonikFono-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face{
+    font-family: "Karantina";
+    src: url("./assets/fonts/Karantina-Regular.ttf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Karantina";
+    src: url("./assets/fonts/Karantina-Bold.ttf") format("opentype");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Karantina";
+    src: url("./assets/fonts/Karantina-Light.ttf") format("opentype");
+    font-weight: 300;
+}
+

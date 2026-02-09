@@ -1,4 +1,5 @@
 <template>
+  
   <div :class="containerClass">
     <Navbar />
     <div>
@@ -13,6 +14,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import Navbar from './components/Navbar.vue'
+
 
 const route = useRoute()
 
